@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms em HTML</title>
+</head>
+<body>
+    
+    <!--Formulário para contato-->
+    <h1>Formulário de Contato</h1>
+    <form action="" method="post">
+
+        <label for="nome">Nome: </label> <!--Texto-->
+        <input type="text" id="nome" name="nome" required> <!--Entrada já validade em html-->
+        
+        <p></p>
+
+        <!--E-mail-->
+        <label for="email">E-mail: </label>
+        <input type="email" id="email" name="email" required>
+
+        <p></p>
+
+        <label for="senha">Senha: </label>
+        <input type="password" id="senha" name="senha" required>
+
+        <hr>
+        <p></p>
+
+        <!--Formas de Seleção-->
+        <p>Escolha o período: </p>
+        
+        <!-- Radio: 
+        O nome é o mesmo porque eles pertencem ao mesmo tipo de conteúdo-->
+        <label for="manha">Manhã</label>
+        <input type="radio" id="manha" name="periodo" value="manha"> 
+
+        <label for="tarde">Tarde</label>
+        <input type="radio" id="tarde" name="periodo" value="tarde">
+
+        <label for="noite">Noite</label>
+        <input type="radio" id="noite" name="periodo" value="noite">
+
+        <p></p>
+
+        <!--Checkbox-->
+       
+        <p></p>
+
+        <p>Quais cursos você deseja fazer?</p>
+        <label for="html">HTML</label>
+        <input type="checkbox" id="html" name="cursos" value="html">
+
+        <label for="css">CSS</label>
+        <input type="checkbox" id="css" name="cursos" value="css">
+    
+        <label for="html">JavaScript</label>
+        <input type="checkbox" id="javascript" name="cursos" value="javascript">
+    
+        <p></p>
+
+        <!--Lista Suspensa-->
+        <label for="cidade">Cidade: </label>
+            <select id="cidade" name="cidade" required>
+
+                <!--A primeira opção é vazia porque ela indica o que o usuário deve fazer-->
+                <option value="" selected disabled>Selecione uma cidade</option>
+                <option value="sp">São Paulo</option>
+                <option value="rj">Rio de Janeiro</option>
+                <option value="curitiba">Curitiba</option>
+            </select>
+
+        <p></p>
+
+        <!--Textarea-->
+        <p>Mensagem:</p>
+        <label for="mensagem"></label>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="30"></textarea>
+        
+        <hr>
+        
+        <p></p>
+
+        <label for="aceita">Aceito os termos</label>
+        <input type="checkbox" id="aceita" name="aceita" value="sim">
+
+
+        <p></p>
+
+        <!--Buttons-->
+        <p>
+            <button type="submit">Enviar</button>
+
+            <button type="reset">Limpar</button>
+        </p>
+    </form>
+</body>
+</html>
